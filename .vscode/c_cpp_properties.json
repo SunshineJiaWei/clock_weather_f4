@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "cStandard": "c99",
+            "compilerPath": "D:/Environment/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+
+            "cppStandard": "c++11",
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "includePath": [
+                "app/inc",
+                "firmware/cmsis/core",
+                "firmware/cmsis/device",
+                "firmware/driver/inc"
+            ],
+            "intelliSenseMode": "windows-gcc-arm",
+            "name": "stm32f407"
+        }
+    ],
+    "version": 4
+}
