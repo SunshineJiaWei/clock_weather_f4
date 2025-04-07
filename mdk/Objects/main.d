@@ -45,3 +45,12 @@
 .\objects\main.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\main.o: ..\driver\st7735\lcd_spi.h
 .\objects\main.o: ..\driver\st7735\stfonts.h
+.\objects\main.o: ..\third_lib\freertos\include\FreeRTOS.H
+.\objects\main.o: ..\app\inc\FreeRTOSConfig.h
+.\objects\main.o: ..\third_lib\freertos\include\projdefs.h
+.\objects\main.o: ..\third_lib\freertos\include\portable.h
+.\objects\main.o: ..\third_lib\freertos\include\deprecated_definitions.h
+.\objects\main.o: ..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\main.o: ..\third_lib\freertos\include\mpu_wrappers.h
+.\objects\main.o: ..\third_lib\freertos\include\task.h
+.\objects\main.o: ..\third_lib\freertos\include\list.h

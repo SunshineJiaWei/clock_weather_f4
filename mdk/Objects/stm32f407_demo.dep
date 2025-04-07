@@ -1,7 +1,7 @@
 Dependencies for Project 'stm32f407', Target 'demo': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\app\main.c)(0x67F38082)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (..\app\inc\main.h)(0x67F37F3C)
+F (..\app\main.c)(0x67F38E01)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\app\inc\main.h)(0x67F38ACB)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -46,9 +46,18 @@ I (..\driver\st7735\st7735.h)(0x67F37F9F)
 I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (..\driver\st7735\lcd_spi.h)(0x67F37D75)
 I (..\driver\st7735\stfonts.h)(0x67F37E92)
-F (..\app\inc\main.h)(0x67F37F3C)()
-F (..\app\board.c)(0x67F36C0F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\board.o --omf_browse .\objects\board.crf --depend .\objects\board.d)
-I (..\app\inc\main.h)(0x67F37F3C)
+I (..\third_lib\freertos\include\FreeRTOS.H)(0x67E02D6F)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+F (..\app\inc\main.h)(0x67F38ACB)()
+F (..\app\board.c)(0x67F36C0F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\board.o --omf_browse .\objects\board.crf --depend .\objects\board.d)
+I (..\app\inc\main.h)(0x67F38ACB)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -93,7 +102,17 @@ I (..\driver\st7735\st7735.h)(0x67F37F9F)
 I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (..\driver\st7735\lcd_spi.h)(0x67F37D75)
 I (..\driver\st7735\stfonts.h)(0x67F37E92)
-F (..\app\overwrite\printf.c)(0x67F2531C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\printf.o --omf_browse .\objects\printf.crf --depend .\objects\printf.d)
+I (..\third_lib\freertos\include\FreeRTOS.H)(0x67E02D6F)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+F (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)()
+F (..\app\overwrite\printf.c)(0x67F2531C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\printf.o --omf_browse .\objects\printf.crf --depend .\objects\printf.d)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -129,7 +148,7 @@ I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (..\driver\delay\delay.c)(0x67F238AA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+F (..\driver\delay\delay.c)(0x67F238AA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -165,7 +184,7 @@ I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
 I (..\driver\delay\delay.h)(0x67F16182)
-F (..\driver\led\led.c)(0x67E0F24E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+F (..\driver\led\led.c)(0x67E0F24E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -203,7 +222,7 @@ I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (D:\Software\Keil5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\driver\led\led.h)(0x67F252D8)
-F (..\driver\usart\console_usart.c)(0x67F2505C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\console_usart.o --omf_browse .\objects\console_usart.crf --depend .\objects\console_usart.d)
+F (..\driver\usart\console_usart.c)(0x67F2505C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\console_usart.o --omf_browse .\objects\console_usart.crf --depend .\objects\console_usart.d)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -240,7 +259,7 @@ I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
 I (..\driver\usart\console_usart.h)(0x67F25011)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
-F (..\driver\st7735\lcd_spi.c)(0x67F37DB8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\lcd_spi.o --omf_browse .\objects\lcd_spi.crf --depend .\objects\lcd_spi.d)
+F (..\driver\st7735\lcd_spi.c)(0x67F37DB8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\lcd_spi.o --omf_browse .\objects\lcd_spi.crf --depend .\objects\lcd_spi.d)
 I (..\driver\st7735\lcd_spi.h)(0x67F37D75)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -277,7 +296,7 @@ I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
-F (..\driver\st7735\st7735.c)(0x67F38041)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\st7735.o --omf_browse .\objects\st7735.crf --depend .\objects\st7735.d)
+F (..\driver\st7735\st7735.c)(0x67F38041)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\st7735.o --omf_browse .\objects\st7735.crf --depend .\objects\st7735.d)
 I (..\driver\st7735\st7735.h)(0x67F37F9F)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -318,7 +337,7 @@ I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (..\driver\st7735\lcd_spi.h)(0x67F37D75)
 I (..\driver\delay\delay.h)(0x67F16182)
 I (..\driver\st7735\stfonts.h)(0x67F37E92)
-F (..\driver\st7735\stfonts.c)(0x67F37F2B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stfonts.o --omf_browse .\objects\stfonts.crf --depend .\objects\stfonts.d)
+F (..\driver\st7735\stfonts.c)(0x67F37F2B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stfonts.o --omf_browse .\objects\stfonts.crf --depend .\objects\stfonts.d)
 I (..\driver\st7735\stfonts.h)(0x67F37E92)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -355,7 +374,7 @@ I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
-F (..\firmware\cmsis\device\system_stm32f4xx.c)(0x67F14772)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
+F (..\firmware\cmsis\device\system_stm32f4xx.c)(0x67F14772)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -390,7 +409,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\cmsis\device\stm32f4xx_it.c)(0x67CA994A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
+F (..\firmware\cmsis\device\stm32f4xx_it.c)(0x67F388EC)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
 I (..\firmware\cmsis\device\stm32f4xx_it.h)(0x53DB55E8)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -426,7 +445,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-I (..\app\inc\main.h)(0x67F37F3C)
+I (..\app\inc\main.h)(0x67F38ACB)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (..\driver\delay\delay.h)(0x67F16182)
@@ -437,8 +456,17 @@ I (..\driver\st7735\st7735.h)(0x67F37F9F)
 I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (..\driver\st7735\lcd_spi.h)(0x67F37D75)
 I (..\driver\st7735\stfonts.h)(0x67F37E92)
+I (..\third_lib\freertos\include\FreeRTOS.H)(0x67E02D6F)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
 F (..\firmware\cmsis\device\startup_stm32f40_41xxx.s)(0x53DB59E4)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"--pd "__UVISION_VERSION SETA 536" --pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f40_41xxx.lst --xref -o .\objects\startup_stm32f40_41xxx.o --depend .\objects\startup_stm32f40_41xxx.d)
-F (..\firmware\driver\src\misc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
+F (..\firmware\driver\src\misc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
 I (..\firmware\driver\inc\misc.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -473,7 +501,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_adc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_adc.o --omf_browse .\objects\stm32f4xx_adc.crf --depend .\objects\stm32f4xx_adc.d)
+F (..\firmware\driver\src\stm32f4xx_adc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_adc.o --omf_browse .\objects\stm32f4xx_adc.crf --depend .\objects\stm32f4xx_adc.d)
 I (..\firmware\driver\inc\stm32f4xx_adc.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -508,7 +536,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_can.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_can.o --omf_browse .\objects\stm32f4xx_can.crf --depend .\objects\stm32f4xx_can.d)
+F (..\firmware\driver\src\stm32f4xx_can.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_can.o --omf_browse .\objects\stm32f4xx_can.crf --depend .\objects\stm32f4xx_can.d)
 I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -543,7 +571,7 @@ I (..\firmware\driver\inc\stm32f4xx_rng.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_crc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_crc.o --omf_browse .\objects\stm32f4xx_crc.crf --depend .\objects\stm32f4xx_crc.d)
+F (..\firmware\driver\src\stm32f4xx_crc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_crc.o --omf_browse .\objects\stm32f4xx_crc.crf --depend .\objects\stm32f4xx_crc.d)
 I (..\firmware\driver\inc\stm32f4xx_crc.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -578,7 +606,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_cryp.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_cryp.o --omf_browse .\objects\stm32f4xx_cryp.crf --depend .\objects\stm32f4xx_cryp.d)
+F (..\firmware\driver\src\stm32f4xx_cryp.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_cryp.o --omf_browse .\objects\stm32f4xx_cryp.crf --depend .\objects\stm32f4xx_cryp.d)
 I (..\firmware\driver\inc\stm32f4xx_cryp.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -613,7 +641,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_cryp_aes.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_cryp_aes.o --omf_browse .\objects\stm32f4xx_cryp_aes.crf --depend .\objects\stm32f4xx_cryp_aes.d)
+F (..\firmware\driver\src\stm32f4xx_cryp_aes.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_cryp_aes.o --omf_browse .\objects\stm32f4xx_cryp_aes.crf --depend .\objects\stm32f4xx_cryp_aes.d)
 I (..\firmware\driver\inc\stm32f4xx_cryp.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -648,7 +676,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_cryp_des.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_cryp_des.o --omf_browse .\objects\stm32f4xx_cryp_des.crf --depend .\objects\stm32f4xx_cryp_des.d)
+F (..\firmware\driver\src\stm32f4xx_cryp_des.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_cryp_des.o --omf_browse .\objects\stm32f4xx_cryp_des.crf --depend .\objects\stm32f4xx_cryp_des.d)
 I (..\firmware\driver\inc\stm32f4xx_cryp.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -683,7 +711,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_cryp_tdes.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_cryp_tdes.o --omf_browse .\objects\stm32f4xx_cryp_tdes.crf --depend .\objects\stm32f4xx_cryp_tdes.d)
+F (..\firmware\driver\src\stm32f4xx_cryp_tdes.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_cryp_tdes.o --omf_browse .\objects\stm32f4xx_cryp_tdes.crf --depend .\objects\stm32f4xx_cryp_tdes.d)
 I (..\firmware\driver\inc\stm32f4xx_cryp.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -718,7 +746,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_dac.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_dac.o --omf_browse .\objects\stm32f4xx_dac.crf --depend .\objects\stm32f4xx_dac.d)
+F (..\firmware\driver\src\stm32f4xx_dac.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_dac.o --omf_browse .\objects\stm32f4xx_dac.crf --depend .\objects\stm32f4xx_dac.d)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -753,7 +781,7 @@ I (..\firmware\driver\inc\stm32f4xx_rng.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_dbgmcu.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_dbgmcu.o --omf_browse .\objects\stm32f4xx_dbgmcu.crf --depend .\objects\stm32f4xx_dbgmcu.d)
+F (..\firmware\driver\src\stm32f4xx_dbgmcu.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_dbgmcu.o --omf_browse .\objects\stm32f4xx_dbgmcu.crf --depend .\objects\stm32f4xx_dbgmcu.d)
 I (..\firmware\driver\inc\stm32f4xx_dbgmcu.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -788,7 +816,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_dcmi.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_dcmi.o --omf_browse .\objects\stm32f4xx_dcmi.crf --depend .\objects\stm32f4xx_dcmi.d)
+F (..\firmware\driver\src\stm32f4xx_dcmi.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_dcmi.o --omf_browse .\objects\stm32f4xx_dcmi.crf --depend .\objects\stm32f4xx_dcmi.d)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -823,7 +851,7 @@ I (..\firmware\driver\inc\stm32f4xx_rng.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_dma.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_dma.o --omf_browse .\objects\stm32f4xx_dma.crf --depend .\objects\stm32f4xx_dma.d)
+F (..\firmware\driver\src\stm32f4xx_dma.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_dma.o --omf_browse .\objects\stm32f4xx_dma.crf --depend .\objects\stm32f4xx_dma.d)
 I (..\firmware\driver\inc\stm32f4xx_dma.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -858,7 +886,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_dma2d.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_dma2d.o --omf_browse .\objects\stm32f4xx_dma2d.crf --depend .\objects\stm32f4xx_dma2d.d)
+F (..\firmware\driver\src\stm32f4xx_dma2d.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_dma2d.o --omf_browse .\objects\stm32f4xx_dma2d.crf --depend .\objects\stm32f4xx_dma2d.d)
 I (..\firmware\driver\inc\stm32f4xx_dma2d.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -894,7 +922,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_exti.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_exti.o --omf_browse .\objects\stm32f4xx_exti.crf --depend .\objects\stm32f4xx_exti.d)
+F (..\firmware\driver\src\stm32f4xx_exti.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_exti.o --omf_browse .\objects\stm32f4xx_exti.crf --depend .\objects\stm32f4xx_exti.d)
 I (..\firmware\driver\inc\stm32f4xx_exti.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -929,7 +957,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_flash.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_flash.o --omf_browse .\objects\stm32f4xx_flash.crf --depend .\objects\stm32f4xx_flash.d)
+F (..\firmware\driver\src\stm32f4xx_flash.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_flash.o --omf_browse .\objects\stm32f4xx_flash.crf --depend .\objects\stm32f4xx_flash.d)
 I (..\firmware\driver\inc\stm32f4xx_flash.h)(0x53DF30C2)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -964,7 +992,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_flash_ramfunc.c)(0x53DF30C2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_flash_ramfunc.o --omf_browse .\objects\stm32f4xx_flash_ramfunc.crf --depend .\objects\stm32f4xx_flash_ramfunc.d)
+F (..\firmware\driver\src\stm32f4xx_flash_ramfunc.c)(0x53DF30C2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_flash_ramfunc.o --omf_browse .\objects\stm32f4xx_flash_ramfunc.crf --depend .\objects\stm32f4xx_flash_ramfunc.d)
 I (..\firmware\driver\inc\stm32f4xx_flash_ramfunc.h)(0x53DF30C2)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1000,7 +1028,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_fsmc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_fsmc.o --omf_browse .\objects\stm32f4xx_fsmc.crf --depend .\objects\stm32f4xx_fsmc.d)
+F (..\firmware\driver\src\stm32f4xx_fsmc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_fsmc.o --omf_browse .\objects\stm32f4xx_fsmc.crf --depend .\objects\stm32f4xx_fsmc.d)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1035,7 +1063,7 @@ I (..\firmware\driver\inc\stm32f4xx_rng.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_gpio.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_gpio.o --omf_browse .\objects\stm32f4xx_gpio.crf --depend .\objects\stm32f4xx_gpio.d)
+F (..\firmware\driver\src\stm32f4xx_gpio.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_gpio.o --omf_browse .\objects\stm32f4xx_gpio.crf --depend .\objects\stm32f4xx_gpio.d)
 I (..\firmware\driver\inc\stm32f4xx_gpio.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1070,7 +1098,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_hash.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_hash.o --omf_browse .\objects\stm32f4xx_hash.crf --depend .\objects\stm32f4xx_hash.d)
+F (..\firmware\driver\src\stm32f4xx_hash.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_hash.o --omf_browse .\objects\stm32f4xx_hash.crf --depend .\objects\stm32f4xx_hash.d)
 I (..\firmware\driver\inc\stm32f4xx_hash.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1105,7 +1133,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_hash_md5.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_hash_md5.o --omf_browse .\objects\stm32f4xx_hash_md5.crf --depend .\objects\stm32f4xx_hash_md5.d)
+F (..\firmware\driver\src\stm32f4xx_hash_md5.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_hash_md5.o --omf_browse .\objects\stm32f4xx_hash_md5.crf --depend .\objects\stm32f4xx_hash_md5.d)
 I (..\firmware\driver\inc\stm32f4xx_hash.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1140,7 +1168,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_hash_sha1.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_hash_sha1.o --omf_browse .\objects\stm32f4xx_hash_sha1.crf --depend .\objects\stm32f4xx_hash_sha1.d)
+F (..\firmware\driver\src\stm32f4xx_hash_sha1.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_hash_sha1.o --omf_browse .\objects\stm32f4xx_hash_sha1.crf --depend .\objects\stm32f4xx_hash_sha1.d)
 I (..\firmware\driver\inc\stm32f4xx_hash.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1175,7 +1203,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_i2c.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_i2c.o --omf_browse .\objects\stm32f4xx_i2c.crf --depend .\objects\stm32f4xx_i2c.d)
+F (..\firmware\driver\src\stm32f4xx_i2c.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_i2c.o --omf_browse .\objects\stm32f4xx_i2c.crf --depend .\objects\stm32f4xx_i2c.d)
 I (..\firmware\driver\inc\stm32f4xx_i2c.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1210,7 +1238,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_iwdg.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_iwdg.o --omf_browse .\objects\stm32f4xx_iwdg.crf --depend .\objects\stm32f4xx_iwdg.d)
+F (..\firmware\driver\src\stm32f4xx_iwdg.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_iwdg.o --omf_browse .\objects\stm32f4xx_iwdg.crf --depend .\objects\stm32f4xx_iwdg.d)
 I (..\firmware\driver\inc\stm32f4xx_iwdg.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1245,7 +1273,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_ltdc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_ltdc.o --omf_browse .\objects\stm32f4xx_ltdc.crf --depend .\objects\stm32f4xx_ltdc.d)
+F (..\firmware\driver\src\stm32f4xx_ltdc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_ltdc.o --omf_browse .\objects\stm32f4xx_ltdc.crf --depend .\objects\stm32f4xx_ltdc.d)
 I (..\firmware\driver\inc\stm32f4xx_ltdc.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1281,7 +1309,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_pwr.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_pwr.o --omf_browse .\objects\stm32f4xx_pwr.crf --depend .\objects\stm32f4xx_pwr.d)
+F (..\firmware\driver\src\stm32f4xx_pwr.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_pwr.o --omf_browse .\objects\stm32f4xx_pwr.crf --depend .\objects\stm32f4xx_pwr.d)
 I (..\firmware\driver\inc\stm32f4xx_pwr.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1316,7 +1344,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_rcc.c)(0x67F36506)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_rcc.o --omf_browse .\objects\stm32f4xx_rcc.crf --depend .\objects\stm32f4xx_rcc.d)
+F (..\firmware\driver\src\stm32f4xx_rcc.c)(0x67F36506)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_rcc.o --omf_browse .\objects\stm32f4xx_rcc.crf --depend .\objects\stm32f4xx_rcc.d)
 I (..\firmware\driver\inc\stm32f4xx_rcc.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1351,7 +1379,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_rng.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_rng.o --omf_browse .\objects\stm32f4xx_rng.crf --depend .\objects\stm32f4xx_rng.d)
+F (..\firmware\driver\src\stm32f4xx_rng.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_rng.o --omf_browse .\objects\stm32f4xx_rng.crf --depend .\objects\stm32f4xx_rng.d)
 I (..\firmware\driver\inc\stm32f4xx_rng.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1386,7 +1414,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_rtc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_rtc.o --omf_browse .\objects\stm32f4xx_rtc.crf --depend .\objects\stm32f4xx_rtc.d)
+F (..\firmware\driver\src\stm32f4xx_rtc.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_rtc.o --omf_browse .\objects\stm32f4xx_rtc.crf --depend .\objects\stm32f4xx_rtc.d)
 I (..\firmware\driver\inc\stm32f4xx_rtc.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1421,7 +1449,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_sai.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_sai.o --omf_browse .\objects\stm32f4xx_sai.crf --depend .\objects\stm32f4xx_sai.d)
+F (..\firmware\driver\src\stm32f4xx_sai.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_sai.o --omf_browse .\objects\stm32f4xx_sai.crf --depend .\objects\stm32f4xx_sai.d)
 I (..\firmware\driver\inc\stm32f4xx_sai.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1457,7 +1485,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_sdio.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_sdio.o --omf_browse .\objects\stm32f4xx_sdio.crf --depend .\objects\stm32f4xx_sdio.d)
+F (..\firmware\driver\src\stm32f4xx_sdio.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_sdio.o --omf_browse .\objects\stm32f4xx_sdio.crf --depend .\objects\stm32f4xx_sdio.d)
 I (..\firmware\driver\inc\stm32f4xx_sdio.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1492,7 +1520,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_spi.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_spi.o --omf_browse .\objects\stm32f4xx_spi.crf --depend .\objects\stm32f4xx_spi.d)
+F (..\firmware\driver\src\stm32f4xx_spi.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_spi.o --omf_browse .\objects\stm32f4xx_spi.crf --depend .\objects\stm32f4xx_spi.d)
 I (..\firmware\driver\inc\stm32f4xx_spi.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1527,7 +1555,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_syscfg.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_syscfg.o --omf_browse .\objects\stm32f4xx_syscfg.crf --depend .\objects\stm32f4xx_syscfg.d)
+F (..\firmware\driver\src\stm32f4xx_syscfg.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_syscfg.o --omf_browse .\objects\stm32f4xx_syscfg.crf --depend .\objects\stm32f4xx_syscfg.d)
 I (..\firmware\driver\inc\stm32f4xx_syscfg.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1562,7 +1590,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_tim.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_tim.o --omf_browse .\objects\stm32f4xx_tim.crf --depend .\objects\stm32f4xx_tim.d)
+F (..\firmware\driver\src\stm32f4xx_tim.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_tim.o --omf_browse .\objects\stm32f4xx_tim.crf --depend .\objects\stm32f4xx_tim.d)
 I (..\firmware\driver\inc\stm32f4xx_tim.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1597,7 +1625,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_usart.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_usart.o --omf_browse .\objects\stm32f4xx_usart.crf --depend .\objects\stm32f4xx_usart.d)
+F (..\firmware\driver\src\stm32f4xx_usart.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_usart.o --omf_browse .\objects\stm32f4xx_usart.crf --depend .\objects\stm32f4xx_usart.d)
 I (..\firmware\driver\inc\stm32f4xx_usart.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1632,7 +1660,7 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
-F (..\firmware\driver\src\stm32f4xx_wwdg.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000"-o .\objects\stm32f4xx_wwdg.o --omf_browse .\objects\stm32f4xx_wwdg.crf --depend .\objects\stm32f4xx_wwdg.d)
+F (..\firmware\driver\src\stm32f4xx_wwdg.c)(0x53DB4DA6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stm32f4xx_wwdg.o --omf_browse .\objects\stm32f4xx_wwdg.crf --depend .\objects\stm32f4xx_wwdg.d)
 I (..\firmware\driver\inc\stm32f4xx_wwdg.h)(0x53DB4D3E)
 I (..\firmware\cmsis\device\stm32f4xx.h)(0x53DB421A)
 I (..\firmware\cmsis\core\core_cm4.h)(0x53C772C2)
@@ -1667,3 +1695,128 @@ I (..\firmware\driver\inc\stm32f4xx_can.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dac.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_dcmi.h)(0x53DB4D3E)
 I (..\firmware\driver\inc\stm32f4xx_fsmc.h)(0x53DB4D3E)
+F (..\third_lib\freertos\croutine.c)(0x67D681AF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
+I (..\third_lib\freertos\include\FreeRTOS.h)(0x67E02D6F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+I (..\third_lib\freertos\include\croutine.h)(0x67D681AF)
+F (..\third_lib\freertos\event_groups.c)(0x67D681AF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (..\third_lib\freertos\include\FreeRTOS.h)(0x67E02D6F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+I (..\third_lib\freertos\include\timers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\event_groups.h)(0x67D681B0)
+F (..\third_lib\freertos\list.c)(0x67D681AF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (..\third_lib\freertos\include\FreeRTOS.h)(0x67E02D6F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+F (..\third_lib\freertos\queue.c)(0x67D681AF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (D:\Software\Keil5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (..\third_lib\freertos\include\FreeRTOS.h)(0x67E02D6F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+I (..\third_lib\freertos\include\queue.h)(0x67D681B0)
+F (..\third_lib\freertos\stream_buffer.c)(0x67D681AF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\stream_buffer.o --omf_browse .\objects\stream_buffer.crf --depend .\objects\stream_buffer.d)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (..\third_lib\freertos\include\FreeRTOS.h)(0x67E02D6F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+I (..\third_lib\freertos\include\stream_buffer.h)(0x67D681B0)
+F (..\third_lib\freertos\tasks.c)(0x67D681AF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (D:\Software\Keil5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (..\third_lib\freertos\include\FreeRTOS.h)(0x67E02D6F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+I (..\third_lib\freertos\include\timers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\stack_macros.h)(0x67D681B0)
+F (..\third_lib\freertos\timers.c)(0x67D681AF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (..\third_lib\freertos\include\FreeRTOS.h)(0x67E02D6F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+I (..\third_lib\freertos\include\queue.h)(0x67D681B0)
+I (..\third_lib\freertos\include\timers.h)(0x67D681B0)
+F (..\third_lib\freertos\portable\MemMang\heap_4.c)(0x67E90B7B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\heap_4.o --omf_browse .\objects\heap_4.crf --depend .\objects\heap_4.d)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (..\third_lib\freertos\include\FreeRTOS.h)(0x67E02D6F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)
+F (..\third_lib\freertos\portable\RVDS\ARM_CM4F\port.c)(0x67D681BF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app\inc -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\delay -I ..\driver\st7735 -I ..\driver\led -I ..\driver\usart -I ..\driver\st7735 -I ..\third_lib\freertos\include -I ..\third_lib\freertos\portable\RVDS\ARM_CM4F-D__UVISION_VERSION="536" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DHSE_VALUE="8000000" -D__ICCARM__-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+I (..\third_lib\freertos\include\FreeRTOS.h)(0x67E02D6F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\app\inc\FreeRTOSConfig.h)(0x67F3898D)
+I (..\third_lib\freertos\include\projdefs.h)(0x67E02994)
+I (..\third_lib\freertos\include\portable.h)(0x67D681B0)
+I (..\third_lib\freertos\include\deprecated_definitions.h)(0x67D681B0)
+I (..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x67D681BF)
+I (..\third_lib\freertos\include\mpu_wrappers.h)(0x67D681B0)
+I (..\third_lib\freertos\include\task.h)(0x67D681B0)
+I (..\third_lib\freertos\include\list.h)(0x67D681B0)

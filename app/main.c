@@ -1,5 +1,28 @@
 #include "main.h"
 
+TaskFunction_t task1(void)
+{
+    uint32_t num = 16;
+    while(1)
+    {
+        led_toggle(&led0);
+        printf("task1 num:%d\r\n",++num);
+        vTaskDelay(pdMS_TO_TICKS(500));
+    }
+
+}
+
+TaskFunction_t task2(void)
+{
+    uint32_t num = 0;
+    while(1)
+    {
+        led_toggle(&led1);
+        printf("task2 num:%d\r\n",++num);
+        vTaskDelay(pdMS_TO_TICKS(1000));
+    }
+
+}
 
 int main(void)
 {
@@ -17,13 +40,15 @@ int main(void)
     led_init(&led2);
 
     st7735_write_char(0, 0, 'A', &st_font_ascii_8x16, ST7735_RED, ST7735_BLACK);
-    st7735_write_string(0, 16, "Hello World!", &st_font_ascii_8x16, ST7735_GREEN, ST7735_RED);
+
+    xTaskCreate((TaskFunction_t)task1, "task1", 128, NULL, 3, NULL);
+    xTaskCreate((TaskFunction_t)task2, "task2", 128, NULL, 5, NULL);
+
+    vTaskStartScheduler();
 
 	while(1)
 	{
-        led_toggle(&led0);
-		led_toggle(&led1);
-		led_toggle(&led2);
+		// led_toggle(&led2);
         printf("Hello World!\r\n"); // 发送字符串到串口1
         printf("你好\r\n"); // 发送字符串到串口1
 

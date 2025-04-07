@@ -46,3 +46,12 @@
 .\objects\stm32f4xx_it.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\stm32f4xx_it.o: ..\driver\st7735\lcd_spi.h
 .\objects\stm32f4xx_it.o: ..\driver\st7735\stfonts.h
+.\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\FreeRTOS.H
+.\objects\stm32f4xx_it.o: ..\app\inc\FreeRTOSConfig.h
+.\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\projdefs.h
+.\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\portable.h
+.\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\deprecated_definitions.h
+.\objects\stm32f4xx_it.o: ..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\mpu_wrappers.h
+.\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\task.h
+.\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\list.h

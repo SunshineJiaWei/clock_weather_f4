@@ -10,6 +10,9 @@
 #include "console_usart.h"
 #include "st7735.h"
 
+#include "FreeRTOS.H"
+#include "task.h"
+
 
 void board_low_level_init(void);
 

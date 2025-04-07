@@ -10,7 +10,7 @@
             "cppStandard": "c++11",
             "defines": [
                 "STM32F40_41xxx",
-                "USE_STDPERIPH_DRIVER"
+                "USE_STDPERIPH_DRIVER",
             ],
             "includePath": [
                 "app/inc",
@@ -20,7 +20,10 @@
                 "driver/usart",
                 "firmware/cmsis/core",
                 "firmware/cmsis/device",
-                "firmware/driver/inc"
+                "firmware/driver/inc",
+                "third_lib/freertos/include",
+                "third_lib/freertos/portable/MemMang",
+                "third_lib/freertos/portable/RVDS/ARM_CM4F"
             ],
             "intelliSenseMode": "windows-gcc-arm",
             "name": "stm32f407"
