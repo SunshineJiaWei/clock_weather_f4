@@ -337,9 +337,9 @@
             <v6Rtti>1</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
+              <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER,HSE_VALUE=8000000</Define>
               <Undefine></Undefine>
-              <IncludePath>..\app\inc;..\driver\led;..\firmware\cmsis\core;..\firmware\cmsis\device;..\firmware\driver\inc</IncludePath>
+              <IncludePath>..\app\inc;..\firmware\cmsis\core;..\firmware\cmsis\device;..\firmware\driver\inc;..\driver\delay;..\driver\st7735;..\driver\led;..\driver\usart;..\driver\st7735</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -401,7 +401,54 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>app\overwrite</GroupName>
+          <Files>
+            <File>
+              <FileName>printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\overwrite\printf.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>driver</GroupName>
+          <Files>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\delay\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\led\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>console_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\usart\console_usart.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>driver\st7735</GroupName>
+          <Files>
+            <File>
+              <FileName>lcd_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\st7735\lcd_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>st7735.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\st7735\st7735.c</FilePath>
+            </File>
+            <File>
+              <FileName>stfonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\st7735\stfonts.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>firmware</GroupName>

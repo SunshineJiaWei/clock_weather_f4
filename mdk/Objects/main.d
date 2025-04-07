@@ -35,4 +35,13 @@
 .\objects\main.o: ..\firmware\driver\inc\stm32f4xx_dac.h
 .\objects\main.o: ..\firmware\driver\inc\stm32f4xx_dcmi.h
 .\objects\main.o: ..\firmware\driver\inc\stm32f4xx_fsmc.h
+.\objects\main.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: ..\driver\delay\delay.h
+.\objects\main.o: ..\driver\led\led.h
+.\objects\main.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: ..\driver\usart\console_usart.h
+.\objects\main.o: ..\driver\st7735\st7735.h
+.\objects\main.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\main.o: ..\driver\st7735\lcd_spi.h
+.\objects\main.o: ..\driver\st7735\stfonts.h

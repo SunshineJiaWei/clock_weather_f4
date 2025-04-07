@@ -14,6 +14,10 @@
             ],
             "includePath": [
                 "app/inc",
+                "driver/delay",
+                "driver/st7735",
+                "driver/led",
+                "driver/usart",
                 "firmware/cmsis/core",
                 "firmware/cmsis/device",
                 "firmware/driver/inc"
