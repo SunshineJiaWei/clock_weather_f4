@@ -45,6 +45,10 @@
 .\objects\main.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\main.o: ..\driver\st7735\lcd_spi.h
 .\objects\main.o: ..\driver\st7735\stfonts.h
+.\objects\main.o: ..\driver\timer\timer.h
+.\objects\main.o: ..\driver\lcd\ILI9341.h
+.\objects\main.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: ..\driver\touch\touch.h
 .\objects\main.o: ..\third_lib\freertos\include\FreeRTOS.H
 .\objects\main.o: ..\app\inc\FreeRTOSConfig.h
 .\objects\main.o: ..\third_lib\freertos\include\projdefs.h
@@ -54,3 +58,6 @@
 .\objects\main.o: ..\third_lib\freertos\include\mpu_wrappers.h
 .\objects\main.o: ..\third_lib\freertos\include\task.h
 .\objects\main.o: ..\third_lib\freertos\include\list.h
+.\objects\main.o: ..\app\gui\lvgl_demo.h
+.\objects\main.o: ..\third_lib\easylogger\inc\elog.h
+.\objects\main.o: ..\third_lib\easylogger\inc\elog_cfg.h

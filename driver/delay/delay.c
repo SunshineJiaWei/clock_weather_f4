@@ -1,35 +1,73 @@
 #include "stm32f4xx.h"
 #include "delay.h"
+#include <stdio.h>
 
-uint32_t fac_us, fac_ms = 0; // 微妙/毫秒因子：描述每单位时间内的时钟周期数
+/******************************************************************************
+ * @brief     通用定时器3中断初始化
+ *            定时器溢出时间计算方法:Tout = ((arr + 1) * (psc + 1)) / Ft s.
+ *            Ft = 定时器工作频率, 单位: Mhz
+ *
+ * @param[in]  arr   :  自动重装值
+ * @param[in]  psc   :  时钟预分频数
+ *
+ * @return     无
+ *
+ ******************************************************************************/
+void TIM3_Init(uint16_t arr, uint16_t psc)
+{
+    TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 
+    TIM_TimeBaseInitStructure.TIM_Period = arr - 1;                   // 自动重装载值
+    TIM_TimeBaseInitStructure.TIM_Prescaler = psc - 1;                // 定时器分频
+    TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Down; // 向下计数模式
+    TIM_TimeBaseInitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
+
+    TIM_TimeBaseInit(TIM3, &TIM_TimeBaseInitStructure); // 初始化定时器3
+}
+
+/******************************************************************************
+ * @brief      初始化定时器延时函数，定时1us
+ *
+ * @param[in]  无
+ *
+ * @return     无
+ *
+ ******************************************************************************/
 void delay_init(void)
 {
-    SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8); // 设置时钟源HCLK / 8
-    fac_us = SystemCoreClock / 8000000;                   // 每微秒的时钟周期数
-    fac_ms = (uint32_t)fac_us * 1000;                     // 每毫秒的时钟周期数
+    TIM3_Init(0, 84); // 定时1us
 }
 
-void delay_us(uint32_t nus)
+/******************************************************************************
+ * @brief      微秒级延时
+ *
+ * @param[in]  us    :  延时微秒数
+ *
+ * @return     无
+ *
+ ******************************************************************************/
+void delay_us(uint32_t us)
 {
-    uint32_t temp = 0;                        // 临时变量，用于存储当前计数值
-    SysTick->LOAD = nus * fac_us - 1;         // 设置重载值
-    SysTick->VAL = 0x00;                      // 清空计数器
-    SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk; // 启动SysTick计数器
-
-    do
-    {
-        temp = SysTick->CTRL; // 读取SysTick控制寄存器
-    } while ((temp & SysTick_CTRL_COUNTFLAG_Msk) == 0); // 等待计数完成
-
-    SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk; // 停止计数器
-    SysTick->VAL = 0x00;                       // 清空计数器
+    TIM3->ARR = us;        // 自动重载器
+    TIM3->CNT = us;        // 计数器
+    TIM_Cmd(TIM3, ENABLE); // 启动定时器
+    while (TIM3->CNT)
+        ;                   // 等待延时时间到
+    TIM_Cmd(TIM3, DISABLE); // 关闭定时器
 }
 
-void delay_ms(uint32_t nms)
+/******************************************************************************
+ * @brief      毫秒级延时,不建议在OS中使用
+ *
+ * @param[in]  us    :  延时毫秒数
+ *
+ * @return     无
+ *
+ ******************************************************************************/
+void delay_ms(uint32_t ms)
 {
-    while (nms--) // 循环延时
+    for (uint32_t i = 0; i < ms; i++)
     {
-        delay_us(1000); // 每次延时1毫秒
+        delay_us(1000);
     }
 }

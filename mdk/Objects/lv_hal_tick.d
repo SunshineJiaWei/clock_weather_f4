@@ -1,0 +1,15 @@
+.\objects\lv_hal_tick.o: ..\third_lib\lvgl\src\hal\lv_hal_tick.c
+.\objects\lv_hal_tick.o: ..\third_lib\lvgl\src\hal\lv_hal_tick.h
+.\objects\lv_hal_tick.o: ..\third_lib\lvgl\src\hal\../lv_conf_internal.h
+.\objects\lv_hal_tick.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_hal_tick.o: ..\third_lib\lvgl\src\hal\../lv_conf_kconfig.h
+.\objects\lv_hal_tick.o: ..\third_lib\lvgl\lv_conf.h
+.\objects\lv_hal_tick.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_hal_tick.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_hal_tick.o: ..\third_lib\freertos\include\FreeRTOS.h
+.\objects\lv_hal_tick.o: ..\app\inc\FreeRTOSConfig.h
+.\objects\lv_hal_tick.o: ..\third_lib\freertos\include\projdefs.h
+.\objects\lv_hal_tick.o: ..\third_lib\freertos\include\portable.h
+.\objects\lv_hal_tick.o: ..\third_lib\freertos\include\deprecated_definitions.h
+.\objects\lv_hal_tick.o: ..\third_lib\freertos\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\lv_hal_tick.o: ..\third_lib\freertos\include\mpu_wrappers.h

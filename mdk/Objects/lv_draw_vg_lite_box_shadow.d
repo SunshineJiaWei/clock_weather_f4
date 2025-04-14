@@ -1,0 +1,15 @@
+.\objects\lv_draw_vg_lite_box_shadow.o: ..\third_lib\lvgl\src\draw\vg_lite\lv_draw_vg_lite_box_shadow.c
+.\objects\lv_draw_vg_lite_box_shadow.o: ..\third_lib\lvgl\src\draw\vg_lite\../../misc/lv_area_private.h
+.\objects\lv_draw_vg_lite_box_shadow.o: ..\third_lib\lvgl\src\draw\vg_lite\../../misc/lv_area.h
+.\objects\lv_draw_vg_lite_box_shadow.o: ..\third_lib\lvgl\src\draw\vg_lite\../../misc/../lv_conf_internal.h
+.\objects\lv_draw_vg_lite_box_shadow.o: ..\third_lib\lvgl\src\draw\vg_lite\../../misc/../lv_conf_kconfig.h
+.\objects\lv_draw_vg_lite_box_shadow.o: ..\third_lib\lvgl\lv_conf.h
+.\objects\lv_draw_vg_lite_box_shadow.o: ..\third_lib\lvgl\src\draw\vg_lite\../../misc/lv_types.h
+.\objects\lv_draw_vg_lite_box_shadow.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_draw_vg_lite_box_shadow.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_draw_vg_lite_box_shadow.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_draw_vg_lite_box_shadow.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\lv_draw_vg_lite_box_shadow.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\lv_draw_vg_lite_box_shadow.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\lv_draw_vg_lite_box_shadow.o: ..\third_lib\lvgl\src\draw\vg_lite\../../misc/lv_math.h
+.\objects\lv_draw_vg_lite_box_shadow.o: ..\third_lib\lvgl\src\draw\vg_lite\lv_draw_vg_lite.h

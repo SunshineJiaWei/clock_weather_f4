@@ -46,6 +46,10 @@
 .\objects\stm32f4xx_it.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\stm32f4xx_it.o: ..\driver\st7735\lcd_spi.h
 .\objects\stm32f4xx_it.o: ..\driver\st7735\stfonts.h
+.\objects\stm32f4xx_it.o: ..\driver\timer\timer.h
+.\objects\stm32f4xx_it.o: ..\driver\lcd\ILI9341.h
+.\objects\stm32f4xx_it.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\stm32f4xx_it.o: ..\driver\touch\touch.h
 .\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\FreeRTOS.H
 .\objects\stm32f4xx_it.o: ..\app\inc\FreeRTOSConfig.h
 .\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\projdefs.h
@@ -55,3 +59,6 @@
 .\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\mpu_wrappers.h
 .\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\task.h
 .\objects\stm32f4xx_it.o: ..\third_lib\freertos\include\list.h
+.\objects\stm32f4xx_it.o: ..\app\gui\lvgl_demo.h
+.\objects\stm32f4xx_it.o: ..\third_lib\easylogger\inc\elog.h
+.\objects\stm32f4xx_it.o: ..\third_lib\easylogger\inc\elog_cfg.h

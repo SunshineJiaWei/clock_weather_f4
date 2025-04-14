@@ -1,0 +1,9 @@
+.\objects\elog.o: ..\third_lib\easylogger\src\elog.c
+.\objects\elog.o: ..\third_lib\easylogger\inc\elog.h
+.\objects\elog.o: ..\third_lib\easylogger\inc\elog_cfg.h
+.\objects\elog.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\elog.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\elog.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\elog.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\elog.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\elog.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdio.h

@@ -1,28 +1,9 @@
+#define LOG_TAG    "main"
 #include "main.h"
 
-TaskFunction_t task1(void)
-{
-    uint32_t num = 16;
-    while(1)
-    {
-        led_toggle(&led0);
-        printf("task1 num:%d\r\n",++num);
-        vTaskDelay(pdMS_TO_TICKS(500));
-    }
-
-}
-
-TaskFunction_t task2(void)
-{
-    uint32_t num = 0;
-    while(1)
-    {
-        led_toggle(&led1);
-        printf("task2 num:%d\r\n",++num);
-        vTaskDelay(pdMS_TO_TICKS(1000));
-    }
-
-}
+// #include "lvgl.h"
+// #include "lv_port_disp.h"
+// #include "lv_port_indev.h"
 
 int main(void)
 {
@@ -30,29 +11,48 @@ int main(void)
 
     usart_init();
 
-    delay_init();
+    elog_low_level_init();
 
-    st7735_init();
-    st7735_fill_screen(ST7735_BLACK);
+    delay_init();
 
     led_init(&led0);
     led_init(&led1);
     led_init(&led2);
 
-    st7735_write_char(0, 0, 'A', &st_font_ascii_8x16, ST7735_RED, ST7735_BLACK);
+    // rtos
+    lvgl_demo();
 
-    xTaskCreate((TaskFunction_t)task1, "task1", 128, NULL, 3, NULL);
-    xTaskCreate((TaskFunction_t)task2, "task2", 128, NULL, 5, NULL);
+    // LCD_Init();
+	// LCD_Clear(BLACK);
+    // TP_Init();
 
-    vTaskStartScheduler();
+    // 瑁告満
+	// TIM4_Init(1000, 84); // 1ms
+    // lv_init();
+	// lv_port_disp_init();
+	// lv_port_indev_init();
+	// lv_obj_t* switch_obj = lv_switch_create(lv_scr_act());
+	// lv_obj_set_size(switch_obj, 120, 60);
+	// lv_obj_align(switch_obj, LV_ALIGN_CENTER, 0, 0);
+
 
 	while(1)
 	{
-		// led_toggle(&led2);
-        printf("Hello World!\r\n"); // 发送字符串到串口1
-        printf("你好\r\n"); // 发送字符串到串口1
+        // tp_dev.scan(0);
+        // if(tp_dev.sta & TP_PRES_DOWN)
+        // {
+        //     LCD_ShowNum(0, 0, tp_dev.x[0], 5, 16);
+        //     LCD_ShowNum(40, 0, tp_dev.y[0], 5, 16);
+        //     LCD_DrawPoint(tp_dev.x[0], tp_dev.y[0]);
+        //     led_toggle(&led1);
+        //     led_toggle(&led2);
+        // }
 
-        delay_ms(1000); // 延时1秒
+        // 瑁告満
+        // delay_ms(5);
+        // lv_timer_handler();
+
+
 	}
 }
 

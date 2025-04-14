@@ -41,10 +41,8 @@
  *----------------------------------------------------------*/
 
 /* Ensure stdint is only used by the compiler, and not the assembler. */
-#ifdef __ICCARM__
 	#include <stdint.h>
 	extern uint32_t SystemCoreClock;
-#endif
 
 #define configUSE_PREEMPTION			1
 #define configUSE_IDLE_HOOK				0
@@ -120,4 +118,5 @@ standard names. */
 #define xPortSysTickHandler SysTick_Handler
 
 #endif /* FREERTOS_CONFIG_H */
+
 

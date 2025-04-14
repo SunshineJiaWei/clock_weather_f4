@@ -35,3 +35,4 @@
 .\objects\delay.o: ..\firmware\driver\inc\stm32f4xx_dcmi.h
 .\objects\delay.o: ..\firmware\driver\inc\stm32f4xx_fsmc.h
 .\objects\delay.o: ..\driver\delay\delay.h
+.\objects\delay.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdio.h

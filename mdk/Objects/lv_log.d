@@ -1,0 +1,14 @@
+.\objects\lv_log.o: ..\third_lib\lvgl\src\misc\lv_log.c
+.\objects\lv_log.o: ..\third_lib\lvgl\src\misc\lv_log.h
+.\objects\lv_log.o: ..\third_lib\lvgl\src\misc\../lv_conf_internal.h
+.\objects\lv_log.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_log.o: ..\third_lib\lvgl\src\misc\../lv_conf_kconfig.h
+.\objects\lv_log.o: ..\third_lib\lvgl\lv_conf.h
+.\objects\lv_log.o: ..\third_lib\lvgl\src\misc\lv_types.h
+.\objects\lv_log.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\lv_log.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lv_log.o: ..\third_lib\lvgl\src\misc\lv_printf.h
+.\objects\lv_log.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_log.o: ..\third_lib\lvgl\src\misc\../hal/lv_hal_tick.h
+.\objects\lv_log.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_log.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdio.h

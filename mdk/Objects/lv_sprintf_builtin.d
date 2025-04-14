@@ -1,0 +1,12 @@
+.\objects\lv_sprintf_builtin.o: ..\third_lib\lvgl\src\stdlib\builtin\lv_sprintf_builtin.c
+.\objects\lv_sprintf_builtin.o: ..\third_lib\lvgl\src\stdlib\builtin\../../lv_conf_internal.h
+.\objects\lv_sprintf_builtin.o: ..\third_lib\lvgl\src\stdlib\builtin\../../lv_conf_kconfig.h
+.\objects\lv_sprintf_builtin.o: ..\third_lib\lvgl\lv_conf.h
+.\objects\lv_sprintf_builtin.o: ..\third_lib\lvgl\src\stdlib\builtin\../lv_sprintf.h
+.\objects\lv_sprintf_builtin.o: ..\third_lib\lvgl\src\stdlib\builtin\../../misc/lv_types.h
+.\objects\lv_sprintf_builtin.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_sprintf_builtin.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_sprintf_builtin.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_sprintf_builtin.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\lv_sprintf_builtin.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\lv_sprintf_builtin.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h

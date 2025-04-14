@@ -729,7 +729,9 @@ void xPortSysTickHandler( void )
         portNVIC_SYSTICK_CURRENT_VALUE_REG = 0UL;
 
         /* Configure SysTick to interrupt at the requested rate. */
+        /* 根据配置的系统时钟节拍频率设置systick重装载寄存器 */
         portNVIC_SYSTICK_LOAD_REG = ( configSYSTICK_CLOCK_HZ / configTICK_RATE_HZ ) - 1UL;
+        /* 设置systick控制状态寄存器：设置systick时钟源不分频（与cpu时钟频率一致）开启systick计数清零中断（systick为向下计数），使能systick计数*/
         portNVIC_SYSTICK_CTRL_REG = ( portNVIC_SYSTICK_CLK_BIT | portNVIC_SYSTICK_INT_BIT | portNVIC_SYSTICK_ENABLE_BIT );
     }
 

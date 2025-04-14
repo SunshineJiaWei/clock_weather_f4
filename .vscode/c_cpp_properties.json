@@ -11,19 +11,33 @@
             "defines": [
                 "STM32F40_41xxx",
                 "USE_STDPERIPH_DRIVER",
+                "LV_LVGL_H_INCLUDE_SIMPLE",
+                "LV_CONF_INCLUDE_SIMPLE"
             ],
             "includePath": [
                 "app/inc",
+                "app/gui",
                 "driver/delay",
                 "driver/st7735",
                 "driver/led",
                 "driver/usart",
+                "driver/lcd",
+                "driver/touch",
+                "driver/timer",
                 "firmware/cmsis/core",
                 "firmware/cmsis/device",
                 "firmware/driver/inc",
                 "third_lib/freertos/include",
                 "third_lib/freertos/portable/MemMang",
-                "third_lib/freertos/portable/RVDS/ARM_CM4F"
+                "third_lib/freertos/portable/RVDS/ARM_CM4F",
+                "third_lib/lvgl",
+                "third_lib/lvgl/src",
+                "third_lib/lvgl/examples/porting",
+                "third_lib/lvgl/demos/stress",
+                "third_lib/easylogger/inc",
+                "third_lib/easylogger/port",
+                "third_lib/easylogger/src"
+
             ],
             "intelliSenseMode": "windows-gcc-arm",
             "name": "stm32f407"
